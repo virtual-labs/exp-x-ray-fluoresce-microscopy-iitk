@@ -2,12 +2,29 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "The analysing crystal in XRF provides the",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Quantitative assessment of chemical composition",
+        "b": "Qualitative assessment of chemical composition",
+        "c": "Both quantitative and qualitative assessment of chemical composition",
+        "d": "Geometry of sample"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The analysing crystal in XRF based on principle of",
+      "answers": {
+        "a": "Braggs’s law",
+        "b": "Law of radiation",
+        "c": "Wien’s displacement law",
+        "d": "Raman’s scattering"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -19,12 +36,12 @@
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which parameters provide the qualitative assessment of elements in XRF result",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Intensity",
+        "b": "2-theta",
+        "c": "Ratio of intensity and 2-theta",
+        "d": "None of these"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -32,7 +49,24 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Crystal Fluorescence is XRF used for",
+      "answers": {
+        "a": "Subtraction of background noises",
+        "b": "For amplifying the intensity",
+        "c": "Measurement of bond length",
+        "d": "None of these"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
