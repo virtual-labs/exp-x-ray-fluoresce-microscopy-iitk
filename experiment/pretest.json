@@ -2,12 +2,46 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the fundamental principle behind XRF analysis?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "The emission of gamma rays by unstable nuclei",
+        "b": "The emission of visible fluorescence from atoms presents in sample",
+        "c": "Absorption of ultraviolet ray by the atoms presents in sample",
+        "d": "The emission of characteristic secondary x-rays by the atoms presents in sample"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "If the absorption of photons by the atom result in the emission of emission of photons of same wavelength for a short time, the phenomenon is known as",
+      "answers": {
+        "a": "Phosphorescence",
+        "b": "Luminescence",
+        "c": "Fluorescence",
+        "d": "None of these"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "If the absorption of photons by the atom result in the emission of emission of photons of same wavelength for a long time, the phenomenon is known as",
+      "answers": {
+        "a": "Phosphorescence",
+        "b": "Luminescence",
+        "c": "Fluorescence",
+        "d": "None of these"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -19,12 +53,12 @@
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "The Intensity of x-rays fluorescence provides",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Quantitative assessment of chemical composition",
+        "b": "Qualitative assessment of chemical composition",
+        "c": "Nature of bond between the atoms",
+        "d": "Both a and b are correct"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -32,7 +66,20 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "X-rays fluorescence is the _________ technique",
+      "answers": {
+        "a": "Non-destructive",
+        "b": "Destructive"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2"
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
