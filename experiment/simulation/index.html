@@ -1,13 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>XRF!</title>
 </head>
 <body>
-		<!-- Your code goes here-->
+    <!-- <div class="mg card fluid-container mb-2"> -->
+        <div class="navbar">
+        <!-- <div class="header-bar p-2"> -->
+          <h3 class="Instruction" style="color: blue; font-style: italic; display: inline-block; margin-left: 1rem; ">Instructions:</h3>
+          <div id="typer" style="display: inline-block; margin-left: 1rem; font-size: larger; font-weight: bold;" disabled></div>
+        </div>
+    </div>
+    
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+    <div class="container">
+        <div class="box control-box" id="box1">
+            <div id="dialogue-box-parent" style="width: 100vw; height: 100vh; z-index: 999; position: absolute; background-color: rgba(0, 0, 0, 0.8); display: block;" disabled>
+                <div class="dialogue-box">
+                    <h2>WELCOME TO THE X-RAY FLUORESCENCE MICROSCOPE SIMULATION</h2>
+                    <h4 style="color: #16b639; font-style: italic">Choose the language for instructions:</h4>
+                    <div style="display: flex;">
+                        <button onclick="englishVoice(this)" style="background-color: green;">ENG</button>
+                        <button onclick="hindiVoice(this)" style="background-color: red;">HIN</button>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="panel-title">XRF Control Panel</h1>
+            <button id="start-button" class="action-button start">Start XRF</button>
+            <button id="stop-button" class="action-button stop">Stop XRF</button>
+            <!-- <p id="status" class="status-text">Status: Idle</p> -->
+
+            <div class="sample-container">
+                <label for="sample" style="color: floralwhite; margin-bottom: 10px;">Select sample</label>
+                <select id="sample"> 
+                   <option value="Metal">Metal</option>
+                   <option value="Alloy">Alloy</option>
+                   <option value="Ceramic">Ceramic</option>
+                   <option value="Polymer">Polymer </option>
+                   <option value="Composite">Composite</option>
+                </select>
+     
+            </div>
+
+    <button id="sampleload" class="action-button-sampleload" style="background-color: #3498db; color: #fff; width: 120px; height: 40px; margin: 20px; border-radius: 10%;">LOAD SAMPLE</button> -->
+    <!-- ... (your existing HTML code) ... -->
+
+
+
+<div class="voltage-slider-container"> 
+
+   
+
+
+    <label for="voltage-slider" style="color: floralwhite; margin-bottom: 5px;">Voltage Control</label>
+    <input type="range" id="voltage-slider" min="0" max="50" value="0" class="colorful-slider" style="background-color: floralwhite;">
+    <span id="voltage-value" class="slider-value">0 kv</span>
+</div>
+            
+            <div class="configuration"style="margin-top: 20px;"> 
+               
+                
+               
+                <label for="integration-time" style="color:floralwhite">Integration Time (s)</label>
+<input type="number" id="integration-time" min="1" max="5" step="1" value="1">
+
+
+                
+                
+            </div>
+             <div class="simulation">  
+                
+                <button id="simulate-start" class="action-button simulate-start">Start simulation</button>
+                <button id="simulate-stop" class="action-button simulate-stop">Stop Simulation</button>
+
+                <button id="start-scan-button" class="action-button start-scan" style="background-color: rgba(3, 39, 112, 0.702); color: white;">Start Scan</button>
+   
+             </div> 
+            
+
+
+
+                
+             
+            
+        </div>  
+        
+        <div class="box" id="box2">
+             
+        
+                <video controls width="100%" height="100%">
+                    <source src="./VID_20240102122732.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+        </div>
+        
+ <div class="box" id="box3">
+            <div id="xrf-image-container" style="display: none;">
+                <!-- <img src="xrf graph.png"> -->
+                <img id="xrf-image" src="images/xrf graph.png" alt="XRF Diagram">
+            </div>
+            <div style="margin-top: 50px;"> 
+            <button id="save-diagram-button" class="action-button save-diagram" onclick="saveDiagram()">Save Diagram</button>
+        </div>
+  </div>
+    
+
+    <script src="js/main.js"></script>
 </body>
 </html>
