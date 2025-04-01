@@ -10,7 +10,7 @@
         "d": "The emission of characteristic secondary x-rays by the atoms presents in sample"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
@@ -24,10 +24,10 @@
         "a": "Phosphorescence",
         "b": "Luminescence",
         "c": "Fluorescence",
-        "d": "None of these"
+        "d": "Photo-electric effect"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
@@ -41,10 +41,10 @@
         "a": "Phosphorescence",
         "b": "Luminescence",
         "c": "Fluorescence",
-        "d": "None of these"
+        "d": "Compton scattering"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
@@ -61,7 +61,7 @@
         "d": "Both a and b are correct"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
@@ -76,7 +76,7 @@
         "b": "Destructive"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2"
       },
       "correctAnswer": "a",
