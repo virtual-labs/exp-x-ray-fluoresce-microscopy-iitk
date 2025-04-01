@@ -19,13 +19,14 @@ d.	Identification of X-rays peaks for the determination of chemical composition 
 
 Table 1: List of crystals used for detection of wide variety of materials (metals, alloys and ceramics)<br>
 
-| Crystals used for analyzing crystal   | Energy of X-rays                                              |
-|---------------------------------------|---------------------------------------------------------------|
-| LiF (Lithium fluoride)                | Very short to medium energy (nickel, copper, Zinc)            |
-| Ge (Germanium)                        | For higher energy x-rays (titanium, vanadium, etc.)           |
-| PE (Pentaerythritol)                  | For medium energy x-rays (chlorine, sulfur, phosphorus)       |
-| TIAP (Thallium acid phthalate)        | For light energy x-rays (oxygen, carbon, nitrogen)            |
-| Crystal Fluorescence                  | For background noises                                         |
+| Crystals used for analyzing crystal  | Energy of X-rays                                            |
+|--------------------------------------|------------------------------------------------------------|
+| LiF (Lithium fluoride)              | Very short to medium energy (nickel, copper, Zinc)          |
+| Ge (Germanium)                      | For higher energy x-rays (titanium, vanadium, etc.)         |
+| PE (Pentaerythritol)                | For medium energy x-rays (chlorine, sulfur, phosphorus)     |
+| TIAP (Thallium acid phthalate)      | For light energy x-rays (oxygen, carbon, nitrogen)          |
+| Crystal Fluorescence                | For background noises                                       |
+
 
 <br><br>
 
