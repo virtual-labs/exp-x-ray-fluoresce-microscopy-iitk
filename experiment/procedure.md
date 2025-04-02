@@ -28,7 +28,7 @@ Table 1: List of crystals used for detection of wide variety of materials (metal
 | Crystal Fluorescence                | For background noises                                       |
 
 
-<br><br>
+<br>
 
 <image src="images\Picture3.png"><br>
 <br>
