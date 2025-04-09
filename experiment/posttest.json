@@ -2,23 +2,6 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "The analysing crystal in XRF provides the",
-      "answers": {
-        "a": "Quantitative assessment of chemical composition",
-        "b": "Qualitative assessment of chemical composition",
-        "c": "Both quantitative and qualitative assessment of chemical composition",
-        "d": "Geometry of sample"
-      },
-      "explanations": {
-        "a": "Explanation 1",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
       "question": "The analysing crystal in XRF based on principle of",
       "answers": {
         "a": "Braggs’s law",
