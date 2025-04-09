@@ -10,7 +10,7 @@
         "d": "Geometry of sample"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
@@ -27,7 +27,7 @@
         "d": "Raman’s scattering"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1 ",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
@@ -44,29 +44,12 @@
         "d": "None of these"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
       "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "Crystal Fluorescence is XRF used for",
-      "answers": {
-        "a": "Subtraction of background noises",
-        "b": "For amplifying the intensity",
-        "c": "Measurement of bond length",
-        "d": "None of these"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
       "difficulty": "beginner"
     },
       {
