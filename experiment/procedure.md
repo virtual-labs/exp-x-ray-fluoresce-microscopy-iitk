@@ -1,4 +1,19 @@
-<b> Methodology:</b><br><br>
+<b>The major components of XRF are:</b><br>
+1.	X-ray Tube – Generates primary X-rays.<br>
+2.	Sample Holder – Holds the specimen to be analyzed<br>
+3.	Collimator – Produces a parallel beam of emitted X-rays.<br>
+4.	Analyzing Crystal – Disperses X-rays based on wavelength.<br>
+5.	Detector – Measures diffracted X-rays.<br>
+6.	Data Processing System – Converts signals into intensity vs angle spectrum.<br><br>
+
+<image src="images\img_2.png"><br>
+<b>Fig. 1:</b> Schematic of XRF instrument and their components<br>
+
+
+
+
+
+<!-- <b> Methodology:</b><br><br>
 
 1.  Sample Irradiation and Initial Beam Formation : <br>
 a.	The sample is irradiated with an X-ray source.<br>
@@ -33,4 +48,4 @@ Table 1: List of crystals used for detection of wide variety of materials (metal
 <image src="images\Picture3.png"><br>
 <br>
 
-<strong>Fig 2</strong>: Elemental mapping of sample (intensity vs energy)<br>
+<strong>Fig 2</strong>: Elemental mapping of sample (intensity vs energy)<br> -->
