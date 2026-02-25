@@ -24,7 +24,7 @@ Because each element has unique energy differences between its electron shells, 
 <b>Fig. 2:</b> Schematic of XRF instrument and their components<br>
 
 <b>Bragg’s Law and Wavelength Separation: </b><br>
-The emitted characteristic X-rays are directed onto an analyzing crystal. The crystal diffracts X-rays according to Bragg’s Law:
+The emitted characteristic X-rays are directed onto an analyzing crystal. The crystal diffracts X-rays according to Bragg’s Law:<br><br>
 nλ = 2 d sin⁡θ<br>
 Where:<br>
 	n =  order of diffraction<br>
@@ -78,4 +78,5 @@ The fundamental of XRF is based on emission of secondary (Fluorescent) X-rays fr
 <image src="images\Picture1.png">
 <br>
 Fig 1 : Generation of secondary X-rays from primary source -->
+
 
