@@ -1,4 +1,26 @@
-<b>The major components of XRF are:</b><br>
+<b>Step 1:</b> Select the preferred language (English or Hindi) from the language selection option.<br>
+
+<b>Step 2:</b> Click on the <i>Start XRF</i> button to switch on the machine.<br>
+
+<b>Step 3:</b> Once the machine starts, select the sample from the sample dropdown menu.<br>
+
+<b>Step 4:</b> Click on the <i>Load Sample</i> button to load the selected sample.<br>
+
+<b>Step 5:</b> Adjust the voltage using the voltage slider.<br>
+
+<b>Step 6:</b> Select the required integration time.<br>
+
+<b>Step 7:</b> Click on the <i>Start Simulation</i> button to begin the simulation.<br>
+
+<b>Step 8:</b> Click on the <i>Stop Simulation</i> button to end the simulation.<br>
+
+<b>Step 9:</b> Click on the <i>Start Scan</i> button to initiate the scanning process.<br>
+
+<b>Step 10:</b> Once the scanning process starts, click on the <i>Stop Machine</i> button.<br>
+
+<b>Step 11:</b> After the machine stops, remove the sample and repeat the same procedure for another sample.
+
+<!--<b>The major components of XRF are:</b><br>
 1.	X-ray Tube – Generates primary X-rays.<br>
 2.	Sample Holder – Holds the specimen to be analyzed<br>
 3.	Collimator – Produces a parallel beam of emitted X-rays.<br>
@@ -7,7 +29,7 @@
 6.	Data Processing System – Converts signals into intensity vs angle spectrum.<br><br>
 
 <image src="images\img_2.png"><br>
-<b>Fig. 1:</b> Schematic of XRF instrument and their components<br>
+<b>Fig. 1:</b> Schematic of XRF instrument and their components<br> -->
 
 
 
@@ -49,3 +71,4 @@ Table 1: List of crystals used for detection of wide variety of materials (metal
 <br>
 
 <strong>Fig 2</strong>: Elemental mapping of sample (intensity vs energy)<br> -->
+
