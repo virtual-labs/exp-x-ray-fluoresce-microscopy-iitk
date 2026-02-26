@@ -12,7 +12,7 @@
 
 <b>Step 7:</b> Click on the <i>Start Simulation</i> button to begin the simulation.<br>
 
-<b>Step 8:</b> Click on the <i>Stop Simulation</i> button to end the simulation.<br>
+<b>Step 8:</b> Click on the <i>Stop Simulation</i> button.<br>
 
 <b>Step 9:</b> Click on the <i>Start Scan</i> button to initiate the scanning process.<br>
 
@@ -71,4 +71,5 @@ Table 1: List of crystals used for detection of wide variety of materials (metal
 <br>
 
 <strong>Fig 2</strong>: Elemental mapping of sample (intensity vs energy)<br> -->
+
 
