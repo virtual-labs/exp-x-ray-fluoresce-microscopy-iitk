@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/results.css">
 
     <title>XRF!</title>
 </head>
@@ -32,17 +33,15 @@
 
             <h1 class="panel-title">XRF Control Panel</h1>
             <button id="start-button" class="action-button start">Start XRF</button>
-            <button id="stop-button" class="action-button stop">Stop XRF</button>
             <!-- <p id="status" class="status-text">Status: Idle</p> -->
 
             <div class="sample-container">
                 <label for="sample" style="color: floralwhite; margin-bottom: 10px;">Select sample</label>
                 <select id="sample"> 
+                   <option value="sample">sample</option>
                    <option value="Metal">Metal</option>
                    <option value="Alloy">Alloy</option>
                    <option value="Ceramic">Ceramic</option>
-                   <option value="Polymer">Polymer </option>
-                   <option value="Composite">Composite</option>
                 </select>
      
             </div>
@@ -78,8 +77,8 @@
                 <button id="simulate-start" class="action-button simulate-start">Start simulation</button>
                 <button id="simulate-stop" class="action-button simulate-stop">Stop Simulation</button>
 
-                <button id="start-scan-button" class="action-button start-scan" style="background-color: rgba(3, 39, 112, 0.702); color: white;">Start Scan</button>
-   
+                <button id="start-scan-button" class="action-button start-scan" style="background-color: rgba(3, 39, 112, 0.702); color: white; display: block; margin: 10px auto;">Start Scan</button>
+                <button id="stop-button" class="action-button stop" style="display: block; margin: 10px auto; opacity: 0.5; cursor: not-allowed;" disabled>Stop XRF</button>
              </div> 
             
 
@@ -100,15 +99,126 @@
         </div>
         
  <div class="box" id="box3">
-            <div id="xrf-image-container" style="display: none;">
+            <div id="xrf-image-container" style="display: none; position: relative;">
                 <!-- <img src="xrf graph.png"> -->
-                <img id="xrf-image" src="images/xrf graph.png" alt="XRF Diagram">
+                <img id="xrf-image" src="images/Graph.png" alt="XRF Diagram" style="width: 100%; display: block;">
+                <div id="peak-markers" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;"></div>
             </div>
-            <div style="margin-top: 50px;"> 
-            <button id="save-diagram-button" class="action-button save-diagram" onclick="saveDiagram()">Save Diagram</button>
+            <div style="margin-top: 60px; text-align: center; position: relative; z-index: 10;"> 
+                <button id="view-results-button" class="action-button" style="display: none;  margin-top: 25px; background-color: #27ae60; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; cursor: pointer;" onclick="document.getElementById('results-page-wrapper').style.display='block'">View Conclusion & Results</button>
+            </div>
         </div>
-  </div>
-    
+        
+    <div id="results-page-wrapper">
+        <div class="results-container">
+            <button class="back-button" onclick="document.getElementById('results-page-wrapper').style.display='none'">&larr; Back to Simulator</button>
+
+            <h2>Simulation is fine, but what to do after the process has stopped? How is the chemical composition determined from this outcome?</h2>
+            
+            <p><strong>Instrumentation parameters</strong></p>
+            <ul>
+                <li>X-axis: 2-theta (degree): The diffraction angle of the analyzing crystal</li>
+                <li>Y-axis: Intensity (kcps): kilo-counts per second</li>
+                <li>Crystal used: LiF1 (Lithium Fluoride): standard crystal for medium-to-heavy elements</li>
+            </ul>
+            
+            <p>In XRF, each element's fluorescent X-rays are diffracted at a specific 2-theta angle by the analyzing crystal (Bragg's Law), separating them physically before detection.</p>
+            
+            <p><strong>Step 1:</strong> Apply Bragg's Law to Understand Peak Positions</p>
+            <p class="formula">n&lambda; = 2&theta;</p>
+            
+            <table>
+                <tr>
+                    <th>Parameter</th>
+                    <th>Value for LiF1</th>
+                </tr>
+                <tr>
+                    <td>Crystal</td>
+                    <td>LiF1</td>
+                </tr>
+                <tr>
+                    <td>D-spacing (2d for 200)</td>
+                    <td>4.028 &Aring;</td>
+                </tr>
+                <tr>
+                    <td>Detectable range (2-theta)</td>
+                    <td>~15&deg; to 90&deg;</td>
+                </tr>
+            </table>
+            
+            <p>Each peak position (2-theta) corresponds to a unique wavelength corresponding to unique element</p>
+            
+            <p><strong>Step 2:</strong> From the spectrum, label all unique peaks</p>
+            <p>In given example the following peaks are clearly labeled:</p>
+            
+            <table>
+                <tr>
+                    <th>2-Theta</th>
+                    <th>Peak Label</th>
+                    <th>Element</th>
+                </tr>
+                <tr><td>~15&ndash;16&deg;</td><td>Rh-KA-Compton, Rh-KB-Compton</td><td>Rhodium</td></tr>
+                <tr><td>~22&deg;</td><td>Zr-KA, Sr-KB1</td><td>Zirconium, Strontium</td></tr>
+                <tr><td>~25&deg;</td><td>Sr-KA</td><td>Strontium</td></tr>
+                <tr><td>~51&deg;</td><td>Fe-KB1</td><td>Iron</td></tr>
+                <tr><td>~57&deg;</td><td>Fe-KA</td><td>Iron</td></tr>
+                <tr><td>~58&deg;</td><td>Mn-KB1</td><td>Manganese</td></tr>
+                <tr><td>~62&ndash;63&deg;</td><td>Mn-KA, Cr-KB1</td><td>Manganese, Chromium</td></tr>
+                <tr><td>~69&deg;</td><td>Cr-KA</td><td>Chromium</td></tr>
+                <tr><td>~76&deg;</td><td>Ti-KB1</td><td>Titanium</td></tr>
+                <tr><td>~85&deg;</td><td>Ti-KA</td><td>Titanium</td></tr>
+            </table>
+            
+            <p><strong>Step 3:</strong> Remove the instrument artifact peaks (NOT from sample)</p>
+            <table>
+                <tr>
+                    <th>Peak</th>
+                    <th>Reason to Exclude</th>
+                </tr>
+                <tr>
+                    <td>Rh-KB1</td>
+                    <td>From the Rhodium X-ray tube anode</td>
+                </tr>
+                <tr>
+                    <td>Rh-KA-Compton / Rh-KB-Compton</td>
+                    <td>Compton scattering of Rh tube radiation off sample</td>
+                </tr>
+            </table>
+            
+            <p><strong>Step 4:</strong> The quantification of elements</p>
+            <p>The relative peak intensity of elements determined in step 3 provide the amount of respective elements present in the sample.</p>
+            <p>In given example the following intensity of peaks observed</p>
+            
+            <table class="center-table">
+                <tr>
+                    <th>Element</th>
+                    <th>Peak Intensity<br>(kcps)</th>
+                    <th>Relative Abundance</th>
+                </tr>
+                <tr><td>Fe</td><td>~1050 kcps</td><td>Major element</td></tr>
+                <tr><td>Mn</td><td>~200 kcps</td><td>Minor element</td></tr>
+                <tr><td>Cr</td><td>~300 kcps</td><td>Minor element</td></tr>
+                <tr><td>Ti</td><td>~100 kcps</td><td>Trace/minor</td></tr>
+                <tr><td>Zr, Sr</td><td>&lt;100 kcps</td><td>Trace elements</td></tr>
+            </table>
+            
+            <p><strong>There are four samples: metal, alloy, ceramic, polymer and composite &ndash; the plot is the same for all four? Also, it would be nice for the users to know the composition of the sample rather than pattern only.</strong></p>
+            <p>The elemental composition of the sample (metal, alloy, ceramic and composite) can be determined as discussed above from step 1 to 4.</p>
+            
+            <ul>
+                <li style="margin-bottom: 10px;">For <strong>pure Metals</strong>, XRF provides the single-element dominant spectrum</li>
+                <li style="margin-bottom: 10px;"><strong>Alloys</strong> show multi-element spectra in characteristic ratios.</li>
+                <li style="margin-bottom: 10px;"><strong>Ceramics</strong> are identified by their metal oxide signatures<br>
+                    e.g.<br>
+                    Alumina (Al<sub>2</sub>O<sub>3</sub>) &rarr; strong Al signal<br>
+                    Zirconia (ZrO<sub>2</sub>) &rarr; strong Zr signal<br>
+                    <br>
+                    However, XRF cannot directly detect oxygen, so structural/bonding information is inferred, not directly measured.
+                </li>
+                <li style="margin-bottom: 10px;">For <strong>polymers</strong>, XRF provides weakest signal as polymers are composed mainly of C, H, O, N, light elements that XRF struggles to detect reliably</li>
+            </ul>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>

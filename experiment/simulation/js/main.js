@@ -228,6 +228,10 @@ integrationTimeInput.addEventListener("change", function () {
   // Assuming you have a button element with the ID "start-scan-button" and statusText and english variables
 
 document.getElementById("start-scan-button").addEventListener("click", function () {
+  // Enable the Stop XRF button
+  stopButton.disabled = false;
+  stopButton.style.opacity = "1";
+  stopButton.style.cursor = "pointer";
 
   if (english) {
       type("Scanning process started. Now please stop machine");
@@ -245,6 +249,12 @@ stopButton.addEventListener("click", function () {
     type("मशीन बंद हो गई है");
     textToSpeech("मशीन बंद हो गई है", "hi-IN");
 }
+  // Show the "View Conclusion & Results" button
+  document.getElementById("view-results-button").style.display = "inline-block";
+  // Automatically redirect to the results page
+  setTimeout(function() {
+      document.getElementById('results-page-wrapper').style.display='block';
+  }, 1500); // Small delay to let the voice finish "Machine has stopped"
 });
 
 
@@ -261,7 +271,72 @@ stopButton.addEventListener("click", function () {
   document.getElementById("start-scan-button").addEventListener("click", function() {
     // Show the XRF graph image in Box 3
     document.getElementById("xrf-image-container").style.display = "block";
+    updatePeakHighlights();
 });
+
+function updatePeakHighlights() {
+    const sample = document.getElementById("sample").value;
+    const markersContainer = document.getElementById("peak-markers");
+    markersContainer.innerHTML = ''; // Clear existing markers
+
+    // Define approximate visual coordinates for peaks based on the Graph.png
+    // x is left percentage, y is top percentage, w is width percentage, h is height percentage
+    const peaks = {
+        'Fe-KB1': { x: 56.0, y: 50, w: 3.5, h: 40 },
+        'Fe-KA': { x: 62.5, y: 20, w: 3.5, h: 70 },
+        'Mn-KA': { x: 68.0, y: 65, w: 3.5, h: 25 },
+        'Cr-KA': { x: 74.8, y: 50, w: 3.5, h: 40 },
+        'Ti-KB1': { x: 81.5, y: 65, w: 3.5, h: 25 },
+        'Ti-KA': { x: 91.5, y: 65, w: 3.5, h: 25 },
+        'Rh-cluster': { x: 19.5, y: 45, w: 5, h: 45 },
+        'Zr-cluster': { x: 24.5, y: 45, w: 5, h: 45 }
+    };
+
+    let peaksToShow = [];
+
+    if (sample === "Metal") {
+        // Just pop-up Fe peaks
+        peaksToShow = ['Fe-KB1', 'Fe-KA'];
+    } else if (sample === "Alloy") {
+        // Pop-up any two peaks, let's say Fe-KA and Cr-KA
+        peaksToShow = ['Fe-KA', 'Cr-KA'];
+    } else if (sample === "Ceramic") {
+        // Pop-up all peaks
+        peaksToShow = Object.keys(peaks);
+    }
+
+    peaksToShow.forEach(peak => {
+        const p = peaks[peak];
+        if (p) {
+            const marker = document.createElement("div");
+            marker.style.position = "absolute";
+            marker.style.left = p.x + "%";
+            marker.style.top = p.y + "%";
+            marker.style.width = p.w + "%";
+            marker.style.height = p.h + "%";
+            marker.style.backgroundColor = "rgba(255, 255, 0, 0.4)";
+            marker.style.borderRadius = "4px";
+            marker.style.boxShadow = "0 0 10px rgba(255, 255, 0, 0.6)";
+            marker.style.animation = "pulse 1.5s infinite alternate";
+            
+            markersContainer.appendChild(marker);
+        }
+    });
+
+    // Add pulse animation keyframes if not exists
+    if (!document.getElementById("pulse-animation")) {
+        const style = document.createElement('style');
+        style.id = "pulse-animation";
+        style.innerHTML = `
+            @keyframes pulse {
+                0% { box-shadow: 0 0 0 0 rgba(255, 255, 0, 0.7); }
+                70% { box-shadow: 0 0 0 8px rgba(255, 255, 0, 0); }
+                100% { box-shadow: 0 0 0 0 rgba(255, 255, 0, 0); }
+            }
+        `;
+        document.head.appendChild(style);
+    }
+}
   
 
 
