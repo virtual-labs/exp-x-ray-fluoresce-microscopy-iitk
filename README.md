@@ -21,3 +21,5 @@ Learning the basics of X-ray Fluorescence microscopy
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
 1 | Ayushi Gupta | Student | Computer Science | BU Jhansi | aayushibgupta@gmail.com
+2 | Manish Ranjan | Student | MSE  |  IIT Kanpur | mranjan20@iitk.ac.in
+3 | Khushboo Singh | MSE |  Employee |  IIT Kanpur | skhushboo@iitk.ac.in
