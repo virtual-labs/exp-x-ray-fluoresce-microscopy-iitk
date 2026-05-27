@@ -1,0 +1,107 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "The analysing crystal in XRF based on principle of",
+      "answers": {
+        "a": "Braggs’s law",
+        "b": "Law of radiation",
+        "c": "Wien’s displacement law",
+        "d": "Raman’s scattering"
+      },
+      "explanations": {
+        "a": "Explanation 1 ",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which parameters provide the qualitative assessment of elements in XRF result",
+      "answers": {
+        "a": "Intensity",
+        "b": "2-theta",
+        "c": "Ratio of intensity and 2-theta",
+        "d": "None of these"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+      {
+      "question": "The analysing crystal in XRF provides the",
+      "answers": {
+        "a": "Quantitative assessment of chemical composition",
+        "b": "Qualitative assessment of chemical composition",
+        "c": "Both quantitative and qualitative assessment of chemical composition",
+        "d": "Geometry of sample"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+       {
+      "question": "The analysing crystal in XRF based on principle of",
+      "answers": {
+        "a": "Braggs’s law",
+        "b": "Law of radiation",
+        "c": "Wien’s displacement law",
+        "d": "Raman’s scattering"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+       {
+      "question": "Which parameters provide the qualitative assessment of elements in XRF result",
+      "answers": {
+        "a": "Intensity",
+        "b": "2-theta",
+        "c": "Ratio of intensity and 2-theta",
+        "d": "4-theta"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+     {
+      "question": "Crystal Fluorescence is XRF used for",
+      "answers": {
+        "a": "Subtraction of background noises",
+        "b": "For amplifying the intensity",
+        "c": "Measurement of bond length",
+        "d": "Measurement of bond angle"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
