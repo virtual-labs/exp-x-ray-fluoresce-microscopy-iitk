@@ -1,24 +1,25 @@
 ## Introduction
 
 
-<b>Discipline | <b>Fill your discipline name here
+<b>Discipline | <b>Mechanical Engineering
 :--|:--|
-<b> Lab | <b> Fill your lab name here
-<b> Experiment|     <b> Fill your experiment name and number here
+<b> Lab | <b> Characterization of Materials
+<b> Experiment|     <b> X-ray Fluoresce microscopy for determination of chemical composition of materials (metals, alloys, ceramics)
 
 ### About the Experiment 
 
-Fill a brief description of this experiment here
+Learning the basics of X-ray Fluorescence microscopy
 
-<b>Name of Developer | <b> Fill the name of experiment owner here 
+<b>Name of Developer | <b> Prof. Krishanu Biswas 
 :--|:--|
-<b> Institute | <b>  
-<b> Email id|     <b>  
-<b> Department |  
+<b> Institute | <b>  IIT Kanpur
+<b> Email id|     <b>  kbiswas@iitk.ac.in
+<b> Department |  Mechanical Engineering
 
 ### Contributors List
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-1 | . | . | . | . | .
-2 | . | . | . | . | .
+1 | Ayushi Gupta | Student | Computer Science | BU Jhansi | aayushibgupta@gmail.com
+2 | Manish Ranjan | Student | MSE  |  IIT Kanpur | mranjan20@iitk.ac.in
+3 | Khushboo Singh |  | MSE  |  IIT Kanpur | skhushboo@iitk.ac.in

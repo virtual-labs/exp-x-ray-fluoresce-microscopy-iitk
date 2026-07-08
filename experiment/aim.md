@@ -1,1 +1,1 @@
-### Aim of the experiment
+Determination of chemical composition using X-ray Fluorescence
